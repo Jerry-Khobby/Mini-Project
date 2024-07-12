@@ -107,7 +107,7 @@ const ShelfComponent = () => {
       {!data &&(
                 <div className='flex flex-col items-center justify-center min-h-screen'>
                   <GiMedicinePills className="w-32 h-32 text-gray-500" />
-                  <p className="mt-4 text-lg text-gray-500">No Medicine with this Shelf Number is unavailable</p>
+                  <p className="mt-4 text-lg text-gray-500">No Medicine with this Shelf Number is available</p>
         </div>
       )}
     </div>
