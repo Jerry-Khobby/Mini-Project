@@ -71,7 +71,7 @@ const MainScanner = () => {
 
 
 
-  
+
   useEffect(() => {
     if (gottenData) {
       handleSubmit(); // Call handleSubmit without event argument
@@ -172,13 +172,10 @@ const MainScanner = () => {
                 </div>
               )}
               {!data && (
-                <div className='flex flex-col items-center justify-center min-h-screen'>
+                <div className='flex flex-col items-center justify-center min-h-screen px-4'>
                   <GiMedicinePills className="w-32 h-32 text-gray-500" />
                   <p className="mt-4 text-lg text-gray-500">No Medicine with this Shelf Number is unavailable</p>
                 </div>
-              )}
-              {error && (
-                <div className="text-red-500 ">{error}</div>
               )}
             </div>
           )
