@@ -8,10 +8,7 @@ export async function initiMongoose() {
           console.log("MongoDB connection already established");
           return mongoose.connection;
       }
-      return await mongoose.connect(process.env.MONGODB_URL,{
-        useNewUrlParser:true,
-        useUnifiedTopology:true
-      });
+      return await mongoose.connect(process.env.MONGODB_URL);
   } catch (error) {
       console.error("Error connecting to MongoDB:", error);
       throw error; // Re-throw the error for the caller to handle
