@@ -47,11 +47,7 @@ const MainScanner = () => {
     setError(null);
 
     try {
-<<<<<<< HEAD
       const response = await fetch("/api/barcode", {
-=======
-      const response = await fetch("http://localhost:3000/api/barcode", {
->>>>>>> origin/master
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -73,6 +69,9 @@ const MainScanner = () => {
     }
   };
 
+
+
+  
   useEffect(() => {
     if (gottenData) {
       handleSubmit(); // Call handleSubmit without event argument
