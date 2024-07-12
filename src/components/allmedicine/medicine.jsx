@@ -2,6 +2,7 @@
 import React, { useState, useEffect,Suspense } from 'react';
 import ProductsLoaderSkeleton from '../skeleton';
 import {GiMedicinePills  } from "react-icons/gi";
+import Image from 'next/image';
 
 const AllMedicine = () => {
   const [data, setData] = useState(null);
